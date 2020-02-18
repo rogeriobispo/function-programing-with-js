@@ -11,7 +11,8 @@
 - através de 
 - composição pura de funções, 
 - evitando compartilhar estado. 
-- efeito colaterias.
+- evitando dados mutaveis
+- evitando efeito colaterias.
 - programação funcional é declarativa. 
   
 ## Programação funcional 
@@ -48,5 +49,12 @@
 ## Compositions.
 - é necessario que os metodos sejam de arity 1 ou seja tenham apenas um parametro.
   
-## 
+## Imperative vs Declarative
+- programaçao imperative utiliza informamos ao computador o que fazer. 
+- temos diversar estrutura de controle loops desvio condicional. 
+
+## Declrative Programing.
+- expressa a logica do programa 
+- sem identificar o fluxo. 
+- 
   
