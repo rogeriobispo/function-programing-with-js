@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 
 const users = [{ name: "James", score: 30, tries: 1 }, { name: "Mary", score: 110, tries: 4 }, { name: "Henry", score: 80, tries: 3 }];
 
@@ -22,12 +25,8 @@ const getUser = (arr, name) => {
             return usr
     }, null)
 }
-const usr = getUser(users, "Ovo");
 
-console.log(usr)
-
-
-var updateScore = function (user, newAmt) {
+var updateScore = function (newAmt, user) {
     if (user) {
         user.score += newAmt;
         return user;
@@ -41,17 +40,19 @@ var updateTries = function (user) {
     }
 };
 
+const compose = (...fns) => (x) => fns.reduceRight((v, f) => f(v), x);
+const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x)
 
-const usr = getUser(users, "Henry");
-const usr1 = updateScore(cloneObj(usr), 30);
-const usr2 = updateTries(cloneObj(usr1));
-storeUser(users, usr2);
+const partGetUser = getUser.bind(null, users)
+const partUpdatedScore30 = updateScore.bind(null, 30)
 
-const updateUser = compose(
-    updateScore,
-    updateTries,
+const updateUser = pipe(
+    partGetUser,
     cloneObj,
+    partUpdatedScore30,
+    updateTries
 )
+console.log(users[2])
+const result = updateUser("Henry")
 
-
-
+console.log(result)

@@ -20,16 +20,15 @@ const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x)
 const composeArray = compose(rmvOverScores, rmvZeroScores)
 
 const composeArrayAll = compose(
+    composeArray,
     boostSingleScores,
-    rmvZeroScores,
-    rmvOverScores,
 )
 
-const composeAverage = compose(
+
+
+const composeAverage = pipe(
+    composeArrayAll,
     average,
-    boostSingleScores,
-    rmvZeroScores,
-    rmvOverScores,
 )
 console.log(composeAverage(scores))
 

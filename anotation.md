@@ -8,7 +8,7 @@
 - imparative programing vs declarative programing. 
   
 ## Programação funcional e o processo de contruir software, 
-através de 
+- através de 
 - composição pura de funções, 
 - evitando compartilhar estado. 
 - efeito colaterias.
@@ -35,6 +35,18 @@ através de
 - iniciando um processo externo.
 - invocando outras funções que tem efeitos colaterias. 
 
-## shared states
+## Arity
+- esta relacionado a quantitade de parametros que uma função tem. 
 
-- estado de um objeto. 
+## Curring
+- mecanimos de transformar uma funçao com muitos parametros em um unico.
+- um medodo com 3 parametros e chamado com um parametro.
+- este metodo retorna uma função ue aceita o segundo metodo.
+- especializa funções 
+- simplifica function composittion
+
+## Compositions.
+- é necessario que os metodos sejam de arity 1 ou seja tenham apenas um parametro.
+  
+## 
+  
