@@ -56,5 +56,5 @@
 ## Declrative Programing.
 - expressa a logica do programa 
 - sem identificar o fluxo. 
-- 
-  
+
+## Lodash 

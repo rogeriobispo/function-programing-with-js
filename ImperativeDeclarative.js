@@ -6,8 +6,6 @@ const imperativeCode = (fns, x) => {
 }
 
 // DECLARATIVE CODE
-
-
 const declarativeCode = (fns, x) => {
     let result;
     for (let index = 0; index < fns.length; index++) {

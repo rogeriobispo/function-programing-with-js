@@ -1,0 +1,17 @@
+{
+  "name": "functional-programing-with-js",
+  "version": "1.0.0",
+  "description": "estudos programaçao funcional",
+  "main": "index.js",
+  "repository": "git@github.com:rogeriobispo/functional-programing-with-js.git",
+  "author": "rogerio bispo <rogerio_pd@yahoo.com.br>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "sucrase-node lodash.js",
+    "exericio8": "sucrase-node exercicio8.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "sucrase": "^3.12.1"
+  }
+}
