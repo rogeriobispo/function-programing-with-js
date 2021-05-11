@@ -11,7 +11,7 @@
     "exericio8": "sucrase-node exercicio8.js"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "sucrase": "^3.12.1"
   }
 }
